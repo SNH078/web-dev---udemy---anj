@@ -1,0 +1,31 @@
+/*for 6 combining selectors*/
+
+/* group combining selector */
+h1,h2{
+    color:blueviolet
+}
+/* child combining selector */
+.box>p{
+    color:firebrick;
+}
+/* --------------------------------- */
+/* postion of this chain n descendent combineres here also matter as*/
+/*  descendent combining selector */
+.box li{
+   color: blue; 
+}
+/* chain combining selector */
+li.done{
+    color:seagreen;
+}
+/* ---------------------------------- */
+/* combining combiner selector */
+ul p.done{
+   font-size: 0.5rem;
+} 
+/* can also use child */
+/* ul>p.done{
+    font-size: 0.5rem;
+ } */
+
+ 

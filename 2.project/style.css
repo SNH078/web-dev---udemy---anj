@@ -1,0 +1,25 @@
+html{background-color:pink;}
+/*class selctor*/
+.bluee-texttt{
+    color: brown;
+}
+/*id selector*/
+#car 
+{
+    color:cornflowerblue;
+}
+/*attribute selctor*/
+p[draggable]
+{
+    color:rgb(222, 25, 104);
+}
+li[draggable]
+{
+    color:green;
+}
+
+/*universal selector--all text into red(here)--comment out everything else to understand this--*/
+*{
+    color:red;
+
+}

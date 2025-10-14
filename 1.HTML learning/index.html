@@ -1,0 +1,311 @@
+<!--br, div, span, li,hr ,size  of image , style of bullets in list , ol,  ul , heading h , p, a , absoulte/relative  linnk ,clickable imge , same/new tab redirection ,b, i , u , 
+sub ,sup, table ,caption  ,thead,th, tr ,tbody, td .colspan,.....form , action,input , radio button , name ,value , id , label for, checkbox ....feedback - textarea ,rows=5...
+input type submit (button)...(YT embed code ,webpage in webpage)iframe ,width,height,src   ,(PC vdo)video ,width,height ,src  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--webpage name -->
+    <title>my doc</title>
+
+
+    <!--styling of bullets in list -->
+    <style>
+        ul {
+            list-style-type: square; /* Square bullets */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>helloo</h1>
+     <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6>
+<hr>
+    <!--comment ,this code is mine ..do not touch it -->
+
+    <p> okay ! so ,this is paragraph </p>
+    <!--absolute link-->
+    <a href ="https://www.google.com/">Google </a>
+    <br>
+    <!--open google in new tab-->
+    <a href= "https://www.google.com/" target="_main">google </a>
+    <br>
+    <a href ="https://www.microsoft.com/en-in/">microsoft </a>
+   <br>
+<!--absolute link-->
+   <!--open file in same folder-->
+    <a href="/portfolio_same.htm">my portfolio</a>
+    <br>
+    <!--look into current directory use of ./  nd use ../folder_name/file_name   for one level up-->
+    <a href="./portfolio_same.htm">my portfolio</a>
+    <br>
+    <!--relative link-->
+    <a href="/1.Hello/portfolio_other.html">portfolio other </a><br/>
+    <a href="../1.Hello/portfolio_other.html">portfolio other </a>
+<hr>
+
+ <!--absolute img -->
+   <img src ="https://m.media-amazon.com/images/I/61NJ7uZ2muL._AC_UL480_FMwebp_QL65_.jpg" alt="notebook" height="100"/>
+   <br>
+
+   <!--clickable image -opening the website in same tab -->
+   <p>clickable image  ...click img below </p>
+   <a href= "https://www.google.com/"><img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="google logo"height ="70"></a>
+   <br><br>
+
+   <!--relative img-->
+   <!--with padding nd border-->
+   <img src="/HTML learning/classmate.jpeg" alt ="classmate ki copy "width =200 style="
+   padding-bottom: 30;
+   border:20px solid blue;"/>
+<hr>
+<b>meri copy</b> 
+<i>costly</i>
+<u>classmate ki</u>   
+
+<p>sample paragraph <u>red car</u> car is red </p>
+
+<big>this is big text</big>
+<br>
+<small>this is small text</small>
+<hr>
+
+
+  <!--div tag (block element)with n without style -->
+  <div style ="color :red;background-color:purple;">
+    <p>hello</p>
+    <p>hi</p>
+    <p>namaste</p>
+</div>
+
+
+<!--background color cover the whole div area..color is limited to thst div only -->
+<div style ="background-color: greenyellow;">
+    <p>bye</p>
+    <p>goodbye</p>
+    <p>see you</p>
+</div>
+
+<!--span tag --inline tag -->
+<span>bye</span>
+<br>
+<span style="background-color:pink">goodbye</span>
+<span style ="background-color: rgb(220, 188, 27);">
+    <p> ciao</p>
+    <p>sayonara</p>
+</span>
+<br>
+<span style ="background-color: rgb(211, 196, 26);display:block;">
+    <p> ciao</p>
+    <p>sayonaraaa</p>
+</span>
+
+
+<!--unordered list -->
+<!--bullets as square,see head -->
+<ul>
+    <li>Apple</li>
+    <li>Mango</li>
+    <li>Litchi</li>
+</ul>
+<hr>
+<!--nested unordered list -->
+<ul>
+    <li>Apple</li>
+<ul>
+    <li>color : red </li>
+    <li>season : winter</li>
+</ul>
+    <li>Mango</li>
+    <ul>
+        <li>color : wellow </li>
+        <li>season :summmer</li>
+    </ul>
+    <li>Litchi</li>
+</ul>
+<hr>
+<!--ordered list--numbering-->
+<ol>
+    <li>Apple</li>
+<ul>
+    <li>color : red </li>
+    <li>season : winter</li>
+</ul>
+    <li>Mango</li>
+    <ol>
+        <li>color : wellow </li>
+        <li>season :summmer</li>
+    </ol>
+    <li>Litchi</li>
+</ol>
+<hr>
+<!--table--><!--caption tag-->
+<!--thead , tbody check area using  inspect-->
+<table>
+    <thead>
+    <caption>Student Data </caption>
+    <tr>
+        <th>NAME</th>
+        <th>ROLL NO.</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>sneha</td>
+        <td>36</td>
+    </tr>
+    <tr>
+        <td>snehaa</td>
+        <td>367</td>
+    </tr>
+</tbody>
+</table>
+
+
+<!--colspan...here covers 2 columns ..in the centere of 2 columns -->
+<hr>
+<table>
+    <thead>
+    <caption>Student Data </caption>
+    <tr>
+        <th colspan="2">INFO</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>sneha</td>
+        <td>36</td>
+    </tr>
+    <tr>
+        <td>snehaa</td>
+        <td>367</td>
+    </tr>
+</tbody>
+</table>
+
+<hr>
+
+
+<!-- subscript-->
+<p>H<sub>2</sub>O</p>
+<!-- superscript-->
+<p>A<sup>n</sup>b</p>
+<hr>
+<!--pre  print text as it is ..with all the spaces -->
+<pre>Lorem, ipsum dolor sit amet consectetur adipisicing elit.              Inventore,
+     accusantium. Voluptatem a nihil sed, aliquam perspiciatis incidunt 
+                   deserunt nporro. Molestiae         numquam maxime libero voluptas expedita eius hic quaerat a.</pre>
+                   <hr>
+
+<!--form tag ----------------------------------------------------------------------------------->
+
+<!--only form elements with "name" attribute will have their values passed when submitting a form -->
+<!--"value" attribute is going to be sent back to the server -->
+<h1>Registration form</h1>
+<form action="/action.php">
+    UserName :  <input type ="text" placeholder="Usernamee">
+    <br>
+    password :  <input type="password" placeholder="password">
+    <hr>
+     <p>need to tick only at circle of checkmark</p>
+    class XI <input type ="radio" value="class XI" name="class" > 
+    <br>
+<input type ="radio" value ="class XII " name ="class"> class XII
+<hr>
+<!-- click on text to tick that checkmark using label -->
+<!-- backend pr 'value' jaati h ..not class name(button name)(class xi)- ..hence value == class name i.e class xi-->
+<p>click on text to tick the checkmark</p>
+
+<!--without id bhi chL JYGA -->
+<!-- Additionally, if you want to manipulate these elements using JavaScript, you can use their 'id' attributes to target them specifically-->
+<!--try changing for="101" to 102 then clicking on class xi will tick the class xii -->
+<label for="101">
+    <input type="radio" value="class XI" name="class" id="101"> Class XI
+</label>
+<label for="102">
+    <input type="radio" value="class XII" name="class" id="102"> Class XII
+</label>
+<hr>
+
+<!--mutiple choice --type -checkbox insted of radio-->
+<!--notice cso ..what difference the code creates -->
+<!--checkmark ..click on text to tick -->
+<p> multiple choice : </p>
+<label for ="101">
+    <input type="checkbox" value="math" name="subject" id="101" >math
+</label>
+<br>
+<label for ="102">
+    <input type="checkbox" value="cso" name="subject" id="102" >
+</label>
+<br>
+<label for ="103">
+    <input type="checkbox" value="machines" name="subject" id="103" >machines
+</label>
+<br>
+<label for ="104">
+    <input type="checkbox" value="english" name="subject" id="104" >english
+</label>
+<hr>
+
+<!--dropdown menu -->
+<p>select your city :</p>
+<select name="city" >
+<option value ="mumbai"> mumbai </option>
+<option value ="pune">pune</option>
+<option value="delhi"> delhi</option>
+<option value ="banglore"> banglore </option>
+</select>
+<hr>
+
+
+<!--feedback-->
+<p>feedback</p>
+<textarea name ="feedback" id="101" rows=3 placeholder ="write your feedback here ..."></textarea> 
+<br>
+<!--In HTML, the value attribute is used with form elements like <input> to specify the initial value of
+     an input field. However, it's not typically used with elements like <textarea>, as the content 
+        within the <textarea> tags serves as the initial value.-->
+
+<!--submit button -->
+<input type= "submit" value="submitttttttt">
+</form>
+<hr>
+
+
+<!-- <label for="email">Email</label>
+<input type="email" class="form-control" name="username" autofocus="on"> -->
+
+<!--form control: adjusts the appearance of these elements to ensure they have full width,
+  are properly spaced, and have consistent styling across different browsers. -->
+  <!-- see the difference it causes -->
+
+
+<!--i frame --webpage in webpage -->
+<!--yt ->vdo ->share-> embed ..copy the code-->
+<!--pura iframe tag is there in embeded code-->
+<p>youtube on my webpage</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=EbUhnxfKgbEbfBaP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<hr>
+
+<p>wiki pedia website </p>
+<iframe width ="560" height="315" src="https://www.wikipedia.org/">
+</iframe>
+<hr>
+
+<!-- video-->
+<p>vdo added from computer itself </p>
+<video width ="560" height="315" src="/HTML learning/myvideo.mov">myvideo</video>
+
+</body>
+</html>

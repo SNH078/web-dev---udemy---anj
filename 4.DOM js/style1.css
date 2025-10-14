@@ -1,0 +1,17 @@
+h1 {
+    color: red;
+    text-shadow:2px 2px 1px blue; 
+  }
+
+.visibility
+{
+   visibility: hidden;
+}
+.huge {
+ color:rgb(58, 188, 101);
+ font-weight: bold;
+ font-size:small;
+}
+body {
+  background-image: url(https://www.andbeyond.com/wp-content/uploads/sites/5/Chhatrapati-Shivaji-Terminus-railway-station-mumbai.jpg);
+}

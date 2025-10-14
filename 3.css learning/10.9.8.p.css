@@ -1,0 +1,71 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 50px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/4e0cc328008799.56e41b35c50a5.gif");
+    /*remove below line to understand  */
+    background-size: cover;
+     
+  }
+  .main {
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: 5rem;
+  }
+  footer {
+    text-align: center;
+    color: midnightblue;
+  }
+.card{
+    width:45%;
+}
+/*comment out .card{} to see the diffrence it creates*/
+.creative{
+color:midnightblue;
+}
+ .left{
+    float: left;
+ }
+ .right{
+    float: right;
+ }
+ .tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+
+  @media(max-width:680px)
+  {
+.logo{
+   width: 50%;
+   height: 50%;
+}
+h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.card{
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+    /* justify:start at left margin nd end at right margin..may be unevenly spaced  */
+}
+
+/* descendent selector */
+.card img{
+margin-bottom: 10px;
+width:100%;
+object-fit:cover;
+/*img or vdo covers its container*/
+}
+
+  }
+  
+  

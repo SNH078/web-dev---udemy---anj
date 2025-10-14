@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table layout t</title>
+    <style>
+        table{
+            width:100%;
+        }
+td{
+    border:4px solid rgb(203, 15, 15);
+    padding:10px;
+    background-color: aquamarine;
+}
+/* In your HTML code, you're trying to set the width of columns in a table using
+ classes .col1, .col2, and .col3, but it's not having any effect. This is because 
+ you're applying those classes to <td> elements directly, but in HTML, <td> elements 
+    don't support the width property directly. */
+    /* below code doesn't work to set width  col1 col2 col3 */
+.col1{
+    width:20%;
+}
+.col2{
+    width:80%;
+}
+.col3{
+    width:80%;
+}
+
+    </style>
+</head>
+<body>
+ <h1>HTML table layout</h1>
+ <table>
+    <td class="col1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia obcaecati error quidem molestiae deserunt quae maxime atque nihil fugit, unde repudiandae pariatur explicabo. Reprehenderit dicta explicabo quaerat, tempore eius fugit.
+    </td>
+    <td class="col1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia obcaecati error quidem molestiae deserunt quae maxime atque nihil fugit, unde repudiandae pariatur explicabo. Reprehenderit dicta explicabo quaerat, tempore eius fugit.
+    </td>
+    <td class="col1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia obcaecati error quidem molestiae deserunt quae maxime atque nihil fugit, unde repudiandae pariatur explicabo. Reprehenderit dicta explicabo quaerat, tempore eius fugit.
+    </td>
+ </table>
+</body>
+</html> -->
+<!-- ------------------------------------------------------------------------ -->
+<!--control the width of columns in an HTML table,
+ you need to use the <colgroup> and <col> elements.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        td {
+            border: 4px solid rgb(203, 15, 15);
+            padding: 10px;
+            background-color: aquamarine;
+        }
+
+        .col1 {
+            width: 70%;
+        }
+
+        .col2 {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Table Layout</h1>
+    <table>
+        <colgroup>
+            <col class="col1">
+            <col class="col2">
+        </colgroup>
+        <tr>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia obcaecati error quidem molestiae deserunt quae maxime atque nihil fugit, unde repudiandae pariatur explicabo. Reprehenderit dicta explicabo quaerat, tempore eius fugit.</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia obcaecati error quidem molestiae deserunt quae maxime atque nihil fugit, unde repudiandae pariatur explicabo. Reprehenderit dicta explicabo quaerat, tempore eius fugit.</td>
+        </tr>
+    </table>
+</body>
+</html>
