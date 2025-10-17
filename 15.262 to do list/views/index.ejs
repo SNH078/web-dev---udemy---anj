@@ -1,0 +1,67 @@
+<%- include('partials/header.ejs'); -%>
+
+  <div class="box" id="heading">
+    <h1>
+      <%= listTitle %>
+    </h1>
+  </div>
+
+
+  <div class="box">
+
+
+    <!-- for loop is for delete edit  ------ADD is out of this loop -->
+ <!--       listItems.forEach(item => {});      -->
+    <% for(let item of listItems){%>
+      <div class="item">
+
+<!-- --------------------DELETE ------------------------------------------------------->
+        <form action="/delete" method="post">
+          <input type="checkbox" onchange="this.form.submit()" name="deleteItemId" value="<%= item.id %>">
+        </form>
+ <!-- The onchange="this.form.submit()" to automatically submit the form when the value of a form element
+   (such as a dropdown menu or input field) change -->
+
+        <p id="title<%=item.id%>">
+          <%= item.title %>
+        </p>
+<!-----------------------EDIT ------------------------------------------------------->
+        <form class="edit" action="/edit" method="post">
+
+          <input type="hidden" name="updatedItemId" value="<%= item.id %>">
+<!-- hidden input  -->
+          <input id="input<%=item.id%>" type="text" placeholder="write here" name="updatedItemTitle" value="<%= item.title %>" 
+          autocomplete="off"  autofocus="true" hidden="true" />
+
+          <!-- tick hidden  -->
+          <button id="done<%=item.id%>" class="edit" type="submit" hidden><img class="icon"
+              src="/assets/icons/check-solid.svg" alt="tick image"></button>
+        </form>
+ <!----------------------------------------------------------------------------------->
+<!-- notice pencil is out of form tag -->
+<!-- when pencil is clicked 4 things will happen,defined by handler function in script tag -->
+        <button id="edit<%=item.id%>" class="edit" onclick="handler('<%=item.id%>')"><img class="icon"
+            src="/assets/icons/pencil-solid.svg" alt="pencil image"></button>
+      </div>
+      <% } %>
+<!----------------------------ADD ---------------------------------------------------->
+        <form class="item" action="/add" method="post">
+          <input type="text" name="newItem" placeholder="Add new task" autocomplete="off" autofocus="true" />
+          <button class="add" type="submit" name="list" value=<%=listTitle %> >+</button>
+        </form>
+  </div>
+
+  <script>
+    // handler fucntion is defined in js
+    function handler(id) {
+      //HIDE  title nd pencil button while editing ... 
+      document.getElementById("title" + id).setAttribute("hidden", true)
+      document.getElementById("edit" + id).setAttribute("hidden", true)
+
+//shows tick button nd input for edit 
+// removes the "hidden" attribute from it. This would make the element visible .
+      document.getElementById("done" + id).removeAttribute("hidden")
+      document.getElementById("input" + id).removeAttribute("hidden")
+    }
+  </script>
+  <%- include('partials/footer.ejs'); -%>

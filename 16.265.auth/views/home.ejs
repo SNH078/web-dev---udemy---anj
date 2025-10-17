@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron centered">
+  <div class="container">
+
+<!-- uses font awesome "key" icon ...<i> tag is not for italic -->
+    <i class="fas fa-key fa-6x"></i>
+<!--"fas" : solid style icon (as opposed to regular or brand icons).
+"fa-key" :specific icon : key icon.
+"fa-6x" :size icon to 6 times the default size. -->
+
+    <h1 class="display-3">Secrets</h1>
+    <p class="lead">Don't keep your secrets, share them anonymously!</p>
+    <hr>
+    <!-- bootstrap button -->
+    <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
+    <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+<!-- role="button": This attribute tells assistive technologies (such as screen 
+ readers) that despite being an <a> tag (which is typically used for links), this 
+  element should be treated as a button. This is important for users who rely on 
+  screen readers, as it helps them understand the interactive nature of the element. -->
+  </div>
+</div>
+
+<%- include('partials/footer') %>
