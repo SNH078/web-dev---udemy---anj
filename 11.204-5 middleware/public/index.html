@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Band Name Generator</title>
+</head>
+
+<body>
+  <h1>Band Name Generator</h1>
+  <!-- The action attribute in an HTML <form> element specifies the URL to which the
+     form data should be sent when the form is submitted. -->
+
+ <!-- action="/submit": This indicates that when the form is submitted,
+  the data will be sent to the /submit URL of the same server. -->
+<!-- method="POST": This specifies that the form data will be sent using the HTTP POST method
+, which is typically used to submit data to be processed to a specified resource. -->
+  <form action="/submit" method="POST">
+    <label for="street">Street Name:</label>
+    <input type="text" name="street" required>
+    <label for="pet">Pet Name:</label>
+    <input type="text" name="pet" required>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
